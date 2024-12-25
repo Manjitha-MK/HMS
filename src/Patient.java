@@ -24,9 +24,9 @@ public class Patient {
         System.out.println("Name : " + name +" ID: " + pid + " Age : " + age + " Contact : " + conNumber);
     }
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public  void addMedicalHistory(String diagnosis, String treatment){
 
