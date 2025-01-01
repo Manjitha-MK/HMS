@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Doctor {
     private int did;
-    private String name;
+    private String dname;
     private ArrayList<String> specializations;
     private ArrayList<String> availableSlots;
 
@@ -11,9 +11,9 @@ public class Doctor {
         availableSlots = new ArrayList<>();
     }
 
-    public void setDoctorDetails(int did,String name,  ArrayList<String> specializations){
+    public void setDoctorDetails(int did,String dname,  ArrayList<String> specializations){
         this.did = did;
-        this.name = name;
+        this.dname = dname;
         this.specializations = specializations;
     }
 
@@ -27,9 +27,17 @@ public class Doctor {
 
     public void displayDoctorDetails(){
         System.out.println("Enter Doctor Id: " +did);
-        System.out.println("Enter Doctor Name: " +name);
+        System.out.println("Enter Doctor Name: " +dname);
         System.out.println("Specializations: " +specializations);
         System.out.println("Available Slots: " +availableSlots);
+    }
+
+    public int getDid(){
+        return did;
+    }
+
+    public ArrayList<String> getAvailableSlots() {
+        return availableSlots;
     }
 
 
